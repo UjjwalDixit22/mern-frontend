@@ -1,0 +1,106 @@
+/* Orders Page Container */
+.orders-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Page Heading */
+.orders-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  background: linear-gradient(to right, #c8e6c9, #f0f4c3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Status Dropdown */
+.orders-page select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  outline: none;
+}
+
+/* Order Item Box */
+.order-item {
+  list-style: none;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+/* Order Buttons */
+.order-item button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Cancel Button */
+.order-item button:first-of-type {
+  background-color: #e53935;
+}
+.order-item button:first-of-type:hover {
+  background-color: #c62828;
+}
+
+/* Complete Button */
+.order-item button:nth-of-type(2) {
+  background-color: #4caf50;
+}
+.order-item button:nth-of-type(2):hover {
+  background-color: #388e3c;
+}
+
+/* Pagination Section */
+.orders-page > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.orders-page > div:last-child button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.orders-page > div:last-child button:hover:not(:disabled) {
+  background-color: #0d47a1;
+}
+
+.orders-page > div:last-child button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.orders-page > div:last-child span {
+  font-weight: bold;
+}

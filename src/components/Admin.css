@@ -1,0 +1,39 @@
+.admin-container {
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  padding: 1rem;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.admin-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.admin-navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.admin-navbar .active {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content {
+  padding: 30px 20px;
+}
