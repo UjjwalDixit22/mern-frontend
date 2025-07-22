@@ -84,3 +84,44 @@ body {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+
+
+.emoji-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.7;
+  animation: floatEmoji 10s linear infinite;
+}
+
+.emoji:nth-child(1) { left: 10%; animation-delay: 0s; top: 100%; }
+.emoji:nth-child(2) { left: 30%; animation-delay: 2s; top: 100%; }
+.emoji:nth-child(3) { left: 50%; animation-delay: 4s; top: 100%; }
+.emoji:nth-child(4) { left: 70%; animation-delay: 1s; top: 100%; }
+.emoji:nth-child(5) { left: 85%; animation-delay: 3s; top: 100%; }
+.emoji:nth-child(6) { left: 15%; animation-delay: 6s; top: 100%; }
+.emoji:nth-child(7) { left: 60%; animation-delay: 5s; top: 100%; }
+
+@keyframes floatEmoji {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50vh) scale(1.2) rotate(20deg);
+  }
+  100% {
+    transform: translateY(-120vh) scale(1) rotate(-20deg);
+    opacity: 0;
+  }
+}

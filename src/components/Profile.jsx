@@ -46,6 +46,15 @@ export default function Profile() {
   };
   return (
     <div className="profile-container">
+    <div class="emoji-container">
+  <span class="emoji">🍕</span>
+  <span class="emoji">🍔</span>
+  <span class="emoji">🍣</span>
+  <span class="emoji">🍩</span>
+  <span class="emoji">🍉</span>
+  <span class="emoji">🍟</span>
+  <span class="emoji">🥗</span>
+</div>
       <div className="profile-card">
       <h3>My Profile</h3>
       {error && <p className="error">{error}</p>}
