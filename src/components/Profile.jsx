@@ -55,6 +55,7 @@ export default function Profile() {
   <span class="emoji">🍟</span>
   <span class="emoji">🥗</span>
 </div>
+
       <div className="profile-card">
       <h3>My Profile</h3>
       {error && <p className="error">{error}</p>}

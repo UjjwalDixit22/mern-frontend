@@ -7,7 +7,8 @@ export default function Header() {
   const { user } = useContext(AppContext);
   return (
     <div className="navbar">
-      <h1 className="navbar-logo" >__ORDERitUP__</h1>
+      {/* <h1 className="navbar-logo" >__ORDERitUP__</h1> */}
+      <img src="/Logo.png" alt="OrderItUp Logo" className="navbar-logo" />
       <nav className="navbar-links">
       <Link to="/">Home</Link>
       <Link to="/cart">MyCart</Link>

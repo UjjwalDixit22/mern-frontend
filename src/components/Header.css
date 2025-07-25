@@ -12,11 +12,24 @@
 }
 
 .navbar-logo {
-  font-size: 32px; /* Increased from 24px */
-  color: #00d4ff;
-  margin: 0;
-  font-weight: bold;
+  height: 60px;
+  width: auto;
+  margin: 0 20px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 212, 255, 0.3); /* Light blue glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
 }
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 212, 255, 0.5);
+}
+
+
 
 .navbar-links {
   display: flex;
